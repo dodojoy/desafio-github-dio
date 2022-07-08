@@ -1,0 +1,15 @@
+terminal 
+
+cd - convocar pastas/mudar de diretório
+dir -  listar pastas/diretórios 
+mkdir - criar pastas
+del / rmdir - del serve para deletar arquivos | rmdir serve para deletar o repositório inteiro
+cls - limpar o terminal
+
+Objetos internos do Git
+Blobs: contém os metadados do objeto, como o tipo do objeto, o tamanho da string/do arquivo, \0 e o conteúdo do arquivo. A estrutura fica por exemplo: echo -e ‘blob 9\0conteudo’ | openssl sha1
+Tree: armazena as blobs, contém metadados, guarda o nome do arquivo(diferente do blobs). É responsável por montar todas as estruturas onde estão os arquivos, podendo apontar para os blobs como para outras árvores.
+Commit: objeto que vai juntar tudo e dar sentido, aponta para uma árvore, para o último commit realizado antes dele, aponta para o autor e para mensagem (mensagem que vai explicar a mudança nesse arquivo).
+
+Chaves SSH
+É uma forma de estabelecer uma conexão segura e encriptada entre duas máquinas.
